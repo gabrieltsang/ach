@@ -1,0 +1,73 @@
+@import "color";
+
+.sticky-help-wrapper {
+  position: relative;
+}
+.sticky-help {
+  width: 377px;
+  border: 1px @color-grey solid;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  div {
+    line-height: 20px;
+    padding: 30px 21px;
+
+    &.need-help {
+      border-bottom: 1px solid;
+      div {
+        padding: 0;
+      }
+    }
+
+    &.chat-now {
+      position: relative;
+      border-bottom: 1px solid;
+      .avatar {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .show-status-dot() {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 32px;
+        left: 55px;
+      }
+
+      .online:after {
+        .show-status-dot;
+        background-color: @color-green;
+
+      }
+      .offline:after {
+        .show-status-dot;
+        background-color: @color-red;
+      }
+    }
+
+    button {
+      padding: 6px 20px;
+      span.glyphicon {
+        padding: 0 10px;
+      }
+    }
+
+    &.faq {
+      @import "faq";
+    }
+  }
+
+
+}

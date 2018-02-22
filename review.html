@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    -->
+    <link rel="stylesheet" href="css/tooltips.css">
+
+</head>
+<body>
+<!--<div class="tooltip">-->
+<!--T! Awesome tooltip with border, shadow and an acute triangle-->
+<!--</div>-->
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="header">
+    <div class="logo"></div>
+    <h1 class="title">Additional Cardholder Request</h1>
+    <div class="notice-board">
+        <div class="you-should-know">
+            What you should know:
+            <ul>
+                <li>Adding an additional cardholder is <strong>free</strong> with a maxium of <strong>4 people</strong> added to the card.</li>
+                <li>Primary cardholder will <strong>share</strong> existing credit limit and available credit.</li>
+                <li>Additional cardholder must have <strong>16 years old</strong>.</li>
+                <li>The application will be <strong>saved automatically</strong>.</li>
+                <li>You can retrieve your application with the <strong>reference code</strong> sent to your email address.</li>
+            </ul>
+        </div>
+        <div class="you-will-need">
+            What you will need:
+            <div>Additional Cardholder Primary ID <span class="tooltip"></span></div>
+            <div>(<strong>Australia Drivers licence OR Passport</strong>)</div>
+            <div>A few moments as the application process will take around 15 minutes.</div>
+        </div>
+    </div>
+</div>
+<div class="main">
+
+    <div class="content">
+        <form action="">
+            <p>Please complete all the fields to add a cardholder to your HSBC credit card <span class="notice">* All fields are mandatory</span> </p>
+            <h2>Primary cardholder HSBC Credit card*</h2>
+            <div class="carousel"></div>
+            <h2>Additional cardholder details*</h2>
+            <div class="form-group">
+                <label for="">Title</label>
+                <select name="title" id="title">
+                    <option value="0">Mr</option>
+                    <option value="1">Miss</option>
+                    <option value="2">Ms</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">First Name</label>
+                <input type="text" name="" placeholder="..."/>
+            </div>
+            <div class="form-group date-of-birth">
+                <label for="">Date of Birth</label>
+                <input type="text" name="" placeholder="DD"/>
+                <input type="text" name="" placeholder="MM"/>
+                <input type="text" name="" placeholder="YYYY"/>
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" name="" placeholder="..."/>
+            </div>
+
+            <div class="form-group">
+                <label for="">Phone number</label>
+                <select name="" id="country-code">
+                    <option value="+61">+61</option>
+                </select>
+                <input type="tel" name="" placeholder=""/>
+            </div>
+
+            <h2>Additional cardholder details*</h2>
+            <div class="form-group">
+                <label for="">Address Type</label>
+                <input type="radio" name="address_type" value="Australian address">
+                <input type="radio" name="address_type" value="Overseas address">
+            </div>
+            <div class="form-group australian-address-detail">
+                <label for="">Address details</label>
+                <input type="text" name="unit" value="" placeholder="Unit">
+                <input type="text" name="number" value="Number" placeholder="Number">
+                <input type="text" name="street_name" value="Number" placeholder="Street Name">
+                <input type="text" name="street_name" value="Number" placeholder="Suburb">
+                <input type="text" name="street_name" value="Number" placeholder="State">
+                <input type="text" name="street_name" value="Number" placeholder="Postcode">
+            </div>
+            <div class="form-group overseas-address-detail">
+                <label for="">Address details</label>
+                <input type="text" name="lindex.htmline_1" value="Number" placeholder="Line 1">
+                <input type="text" name="line_2" value="Number" placeholder="Line 2">
+                <input type="text" name="street_name" value="Number" placeholder="City/Town">
+                <input type="text" name="street_name" value="Number" placeholder="State">
+                <input type="text" name="street_name" value="Number" placeholder="Postcode">
+                <select name="" id="country">
+                    <option value="+61">Select Country</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="">Did the cardholder live at this address less than 3 years? <span class="tooltip"></span></label>
+                <input type="checkbox" name="address_type" value="Australian address">
+            </div>
+
+
+            <h2>Additional cardholder proof of identity*</h2>
+            <div class="form-group">
+                <label for="">Additional cardholder nationality(ies): <span class="tooltip"></span></label>
+                <input type="text" name="" placeholder="Start typing a country name..." />
+            </div>
+            <div class="form-group">
+                <label for="">Select the additional cardholder Primary ID: <span class="tooltip"></span></label>
+                <input type="radio" name="" placeholder="" />
+                <input type="radio" name="" placeholder="" />
+            </div>
+
+            <div class="form-bottom">
+                <p>You are almost done, lorem opsum dolor sit amet quesia:</p>
+                <input type="submit" value="Review application" class="review-application">
+            </div>
+        </form>
+
+    </div>
+    <div class="progress-bar">
+        <div class="progress-bar-label"></div>
+    </div>
+</div>
+<script>
+
+</script>
+<!--  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

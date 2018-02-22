@@ -1,0 +1,34 @@
+@import "color";
+
+.notice-board {
+  padding: 45px @header-padding-left-right @header-padding-left-right;
+  background-color: @color-lightestgray;
+  color: @color-grey;
+
+  &>div {
+    height: 155px;
+  }
+
+  .you-should-know {
+    border-right: solid 1px @color-lightergray;
+  }
+
+  .you-will-need {
+    padding: 0 0 0 8em;
+    width: 30%;
+    div {
+      margin-top: 20px;
+    }
+  }
+
+  ul {
+    padding-left: 30px;
+    margin-top: 20px;
+
+    li {
+      line-height: 23px;
+      padding-left: 10px;
+      font-size: 13px;
+    }
+  }
+}

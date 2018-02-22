@@ -1,0 +1,27 @@
+.notice-board {
+  padding: 45px 60px 60px;
+  background-color: #ededed;
+  color: #717171;
+}
+.notice-board > div {
+  height: 155px;
+}
+.notice-board .you-should-know {
+  border-right: solid 1px #d2d2d2;
+}
+.notice-board .you-will-need {
+  padding: 0 0 0 8em;
+  width: 30%;
+}
+.notice-board .you-will-need div {
+  margin-top: 20px;
+}
+.notice-board ul {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+.notice-board ul li {
+  line-height: 23px;
+  padding-left: 10px;
+  font-size: 13px;
+}
